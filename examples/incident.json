@@ -1,0 +1,53 @@
+{
+  "incidentId": "INC-2026-0017",
+  "signals": [
+    {
+      "provider": "outlook",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "smtpCode": 421,
+      "response": "4.7.650 Temporarily rate limited",
+      "deliveryRate": 0.91,
+      "bounceRate": 0.04,
+      "deferralRate": 0.21,
+      "complaintRate": 0.002,
+      "latencySeconds": 6.2,
+      "currentRateMsgPerSec": 100
+    },
+    {
+      "provider": "gmail",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "smtpCode": 250,
+      "response": "2.0.0 OK",
+      "deliveryRate": 0.985,
+      "bounceRate": 0.008,
+      "deferralRate": 0.02,
+      "complaintRate": 0.0004,
+      "latencySeconds": 1.9,
+      "currentRateMsgPerSec": 120
+    },
+    {
+      "provider": "yahoo",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "smtpCode": 250,
+      "response": "2.0.0 OK",
+      "deliveryRate": 0.979,
+      "bounceRate": 0.012,
+      "deferralRate": 0.03,
+      "complaintRate": 0.0005,
+      "latencySeconds": 2.1,
+      "currentRateMsgPerSec": 80
+    }
+  ],
+  "baselines": {
+    "outlook:203.0.113.10": {
+      "deferralRate": 0.03,
+      "bounceRate": 0.015,
+      "complaintRate": 0.0005,
+      "latencySeconds": 2.0,
+      "std": { "deferralRate": 0.01, "latencySeconds": 0.5 }
+    }
+  }
+}

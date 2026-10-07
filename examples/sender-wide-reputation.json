@@ -1,0 +1,36 @@
+{
+  "incidentId": "INC-2026-0042",
+  "signals": [
+    {
+      "provider": "gmail",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "smtpCode": 550,
+      "response": "5.7.1 Message rejected due to high complaint rate",
+      "deliveryRate": 0.74,
+      "bounceRate": 0.03,
+      "deferralRate": 0.05,
+      "complaintRate": 0.009
+    },
+    {
+      "provider": "outlook",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "smtpCode": 550,
+      "response": "5.7.1 Recipient complaint threshold exceeded",
+      "deliveryRate": 0.71,
+      "bounceRate": 0.04,
+      "deferralRate": 0.06,
+      "complaintRate": 0.011
+    },
+    {
+      "provider": "yahoo",
+      "domain": "example.com",
+      "ip": "203.0.113.10",
+      "deliveryRate": 0.76,
+      "bounceRate": 0.03,
+      "deferralRate": 0.05,
+      "complaintRate": 0.008
+    }
+  ]
+}
